@@ -1,0 +1,28 @@
+{
+    "name": "laradic/phpstorm-autocomplete",
+    "description": "Extendable Laravel auto completion generator for IntelliJ PHPStorm / IDEA using PHPStorm Advanced Metadata. Similar to ide-helper:meta, with support for extra custom generators. Also includes routes and config",
+    "keywords": ["laravel", "phpstorm", "intellij", "idea", "ide", "metadata", "generator"],
+    "license": "MIT",
+    "authors": [
+        {"name": "Robin Radic", "homepage": "https://github.com/robinradic", "email": "robin@radic.nl", "role": "Developer"}
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laradic/support": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laradic\\Phpstorm\\Autocomplete\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laradic\\Phpstorm\\Autocomplete\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

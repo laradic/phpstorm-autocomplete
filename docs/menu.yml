@@ -1,0 +1,8 @@
+menu:
+  - name: Overview
+    icon: fa fa-eye
+    document: index
+
+  - name: Api Documentation
+    icon: fa fa-code
+    document: phpdoc

@@ -1,6 +1,9 @@
 <?php
 namespace Laradic\Phpstorm\Autocomplete\Metas;
 
+use Illuminate\Contracts\Foundation\Application;
+use Laradic\Phpstorm\Autocomplete\Translation\Translator;
+
 class TransMeta extends BaseMeta
 {
     protected $methods = [
@@ -14,6 +17,13 @@ class TransMeta extends BaseMeta
 
     public function getData()
     {
-
+        return array_dot($this->app->make('translator')->all());
     }
+
+    public static function canRun()
+    {
+        return app() instanceof Application && app('translator') instanceof Translator;
+    }
+
+
 }

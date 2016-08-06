@@ -69,6 +69,7 @@ class MetaRepository extends Collection implements MetaRepositoryInterface
 
     public function create($path = null, $viewFile = null)
     {
+        app()->register(Translation\TranslationServiceProvider::class);
         $path     = is_null($path) ? config('phpstorm-autocomplete.output') : $path;
         $viewFile = is_null($viewFile) ? config('phpstorm-autocomplete.view') : $viewFile;
 

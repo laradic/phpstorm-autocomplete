@@ -4,7 +4,7 @@
     "keywords": ["laravel", "phpstorm", "intellij", "idea", "ide", "metadata", "generator"],
     "license": "MIT",
     "authors": [
-        {"name": "Robin Radic", "homepage": "https://github.com/robinradic", "email": "robin@radic.nl", "role": "Developer"}
+        {"name": "Robin Radic", "homepage": "http://robin.radic.nl", "email": "robin@radic.nl", "role": "Developer"}
     ],
     "require": {
         "php": ">=5.5.9",

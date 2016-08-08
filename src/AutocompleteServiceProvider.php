@@ -8,8 +8,8 @@ use Illuminate\Support\ServiceProvider;
 /**
  * The main service provider
  *
- * @author        Sebwite
- * @copyright     Copyright (c) 2015, Sebwite
+ * @author        Laradic
+ * @copyright     Copyright (c) 2015, Laradic
  * @license       http://mit-license.org MIT
  * @package       Laradic\Phpstorm\Autocomplete
  */

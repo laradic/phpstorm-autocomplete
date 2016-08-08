@@ -5,14 +5,14 @@ subtitle: Laravel PHPStorm & IDEA Meta generator
 Laravel PHPStorm & IDEA Meta generator
 ======================================
 
-<!--[![GitHub Version](https://img.shields.io/github/tag/sebwite/idea-meta.svg?style=flat-square&label=version)](http://badge.fury.io/gh/sebwite%2Fidea-meta)-->
-[![Total Downloads](https://img.shields.io/packagist/dt/sebwite/idea-meta.svg?style=flat-square)](https://packagist.org/packages/sebwite/idea-meta)
-[![Documentation](https://img.shields.io/badge/goto-documentation-orange.svg?style=flat-square)](https://docs.sebwite.nl/sebwite-idea-meta)
-[![Source](http://img.shields.io/badge/source-sebwite--idea--meta-blue.svg?style=flat-square)](https://bitbucket.org/sebwitepackages/sebwite-idea-meta)
+<!--[![GitHub Version](https://img.shields.io/github/tag/laradic/idea-meta.svg?style=flat-square&label=version)](http://badge.fury.io/gh/laradic%2Fidea-meta)-->
+[![Total Downloads](https://img.shields.io/packagist/dt/laradic/idea-meta.svg?style=flat-square)](https://packagist.org/packages/laradic/idea-meta)
+[![Documentation](https://img.shields.io/badge/goto-documentation-orange.svg?style=flat-square)](https://docs.laradic.nl/laradic-idea-meta)
+[![Source](http://img.shields.io/badge/source-laradic--idea--meta-blue.svg?style=flat-square)](https://bitbucket.org/laradicpackages/laradic-idea-meta)
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://tldrlegal.com/license/mit-license)
 
 
-`sebwite/idea-meta` is a package for the Laravel 5 framework.
+`laradic/idea-meta` is a package for the Laravel 5 framework.
 
 The package follows the FIG standards PSR-1, PSR-2, and PSR-4 to ensure a high level of interoperability between shared PHP code.
 
@@ -29,12 +29,12 @@ Quick Installation
 Begin by installing the package through Composer.
 
 ```bash
-composer require sebwite/idea-meta
+composer require laradic/idea-meta
 ```
 
 Add the service provider
 ```php
-Sebwite\IdeaMeta\IdeaMetaServiceProvider::class
+Laradic\IdeaMeta\IdeaMetaServiceProvider::class
 ```
 
 Generate the meta file
@@ -47,7 +47,7 @@ Profit!
 Override or add generators
 --------------------------
 
-All `Meta` generators should extend the `Sebwite\IdeaMeta\Metas\BaseMeta` abstract class.
+All `Meta` generators should extend the `Laradic\IdeaMeta\Metas\BaseMeta` abstract class.
 `Meta` generators can then be added to the `MetaRepository` by for example, using the binding: `app('idea-meta')->add(App\MyCustomMeta::class)`.
  
 Here's a quick example:
@@ -139,7 +139,7 @@ class BitbucketMeta extends BaseMeta
     {!! $method !!} => [
         '' == '@',
         @foreach($data as $k => $v)
-            '{!! $k !!}' instanceof {!! \Sebwite\Support\Str::ensureLeft($v, '\\') !!},
+            '{!! $k !!}' instanceof {!! \Laradic\Support\Str::ensureLeft($v, '\\') !!},
         @endforeach
     ],
 @endforeach

@@ -1,6 +1,6 @@
 <?php
 /**
- * Part of the Sebwite PHP packages.
+ * Part of the Laradic PHP packages.
  *
  * MIT License and copyright information bundled with this package in the LICENSE file
  */
@@ -12,9 +12,9 @@ use Illuminate\Contracts\Foundation\Application;
 /**
  * This is the ConfigMeta.
  *
- * @package        Sebwite
- * @author         Sebwite Dev Team
- * @copyright      Copyright (c) 2015, Sebwite
+ * @package        Laradic
+ * @author         Laradic Dev Team
+ * @copyright      Copyright (c) 2015, Laradic
  * @license        https://tldrlegal.com/license/mit-license MIT License
  */
 abstract class BaseMeta implements MetaContract

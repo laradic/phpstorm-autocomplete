@@ -1,7 +1,7 @@
 Laravel PHPStorm & IDEA Meta generator
 ======================================
 
-`sebwite/idea-meta` is a package for the Laravel 5 framework.
+`laradic/idea-meta` is a package for the Laravel 5 framework.
 
 The package follows the FIG standards PSR-1, PSR-2, and PSR-4 to ensure a high level of interoperability between shared PHP code.
 
@@ -18,12 +18,12 @@ Quick Installation
 Begin by installing the package through Composer.
 
 ```bash
-composer require sebwite/idea-meta
+composer require laradic/idea-meta
 ```
 
 Add the service provider
 ```php
-Sebwite\IdeaMeta\IdeaMetaServiceProvider::class
+Laradic\IdeaMeta\IdeaMetaServiceProvider::class
 ```
 
 Generate the meta file
@@ -36,7 +36,7 @@ Profit!
 Override or add generators
 --------------------------
 
-All `Meta` generators should extend the `Sebwite\IdeaMeta\Metas\BaseMeta` abstract class.
+All `Meta` generators should extend the `Laradic\IdeaMeta\Metas\BaseMeta` abstract class.
 `Meta` generators can then be added to the `MetaRepository` by for example, using the binding: `app('idea-meta')->add(App\MyCustomMeta::class)`.
  
 Here's a quick example:
@@ -128,7 +128,7 @@ class BitbucketMeta extends BaseMeta
     {!! $method !!} => [
         '' == '@',
         @foreach($data as $k => $v)
-            '{!! $k !!}' instanceof {!! \Sebwite\Support\Str::ensureLeft($v, '\\') !!},
+            '{!! $k !!}' instanceof {!! \Laradic\Support\Str::ensureLeft($v, '\\') !!},
         @endforeach
     ],
 @endforeach

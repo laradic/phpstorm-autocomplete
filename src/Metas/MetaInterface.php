@@ -6,7 +6,7 @@
  */
 
 
-namespace Laradic\Phpstorm\Autocomplete\Metas;
+namespace Laradic\Idea\Metadata\Metas;
 
 interface MetaInterface
 {

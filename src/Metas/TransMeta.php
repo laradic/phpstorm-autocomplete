@@ -1,8 +1,8 @@
 <?php
-namespace Laradic\Phpstorm\Autocomplete\Metas;
+namespace Laradic\Idea\Metadata\Metas;
 
 use Illuminate\Contracts\Foundation\Application;
-use Laradic\Phpstorm\Autocomplete\Translation\Translator;
+use Laradic\Idea\Metadata\Translation\Translator;
 
 class TransMeta extends BaseMeta
 {

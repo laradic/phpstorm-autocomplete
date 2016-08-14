@@ -6,7 +6,7 @@
  * Time: 10:11 PM
  */
 
-namespace Laradic\Phpstorm\Autocomplete\Translation;
+namespace Laradic\Idea\Metadata\Translation;
 
 
 interface LoaderInterface extends \Illuminate\Translation\LoaderInterface

@@ -1,5 +1,5 @@
 <?php
-namespace Laradic\Phpstorm\Autocomplete\Tests;
+namespace Laradic\Idea\Metadata\Tests;
 
 use Laradic\Testing\Laravel\Traits\ServiceProviderTester;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laradic\Phpstorm\Autocomplete;
+namespace Laradic\Idea\Metadata;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
@@ -56,7 +56,7 @@ class AutocompleteServiceProvider extends ServiceProvider
         $this->app->alias('phpstorm-autocomplete', 'idea-meta');
 
         $this->app[ 'command.phpstorm-autocomplete.generate' ] = $this->app->share(function (Application $app) {
-            return $app->make(Commands\MetaCommand::class);
+            return $app->make(\Laradic\Idea\Console\MetaCommand::class);
         });
 
         $this->commands('command.phpstorm-autocomplete.generate');

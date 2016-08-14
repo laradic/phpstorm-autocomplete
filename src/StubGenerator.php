@@ -1,5 +1,5 @@
 <?php
-namespace Laradic\Phpstorm\Autocomplete;
+namespace Laradic\Idea\Metadata;
 
 class StubGenerator
 {

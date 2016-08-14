@@ -1,6 +1,6 @@
 <?php
 
-namespace Laradic\Phpstorm\Autocomplete\Translation;
+namespace Laradic\Idea\Metadata\Translation;
 
 
 /**

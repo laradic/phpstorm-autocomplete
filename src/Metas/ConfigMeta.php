@@ -4,9 +4,7 @@
  *
  * MIT License and copyright information bundled with this package in the LICENSE file
  */
-namespace Laradic\Phpstorm\Autocomplete\Metas;
-
-use Illuminate\Contracts\Config\Repository;
+namespace Laradic\Idea\Metadata\Metas;
 
 /**
  * This is the ConfigMeta.

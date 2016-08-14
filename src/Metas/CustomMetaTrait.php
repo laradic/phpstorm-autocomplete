@@ -9,7 +9,7 @@
  * @license            https://radic.mit-license.org The MIT License (MIT)
  */
 
-namespace Laradic\Phpstorm\Autocomplete\Metas;
+namespace Laradic\Idea\Metadata\Metas;
 
 
 trait CustomMetaTrait

@@ -4,7 +4,7 @@
  *
  * License and copyright information bundled with this package in the LICENSE file
  */
-namespace Laradic\Phpstorm\Autocomplete;
+namespace Laradic\Idea\Metadata;
 
 /**
  * This is the MetaRepository.

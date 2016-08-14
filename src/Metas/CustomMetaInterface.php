@@ -8,7 +8,7 @@
  * @copyright         Copyright (c) 2015, Robin Radic. All rights reserved
  * @license          https://radic.mit-license.org The MIT License (MIT)
  */
-namespace Laradic\Phpstorm\Autocomplete\Metas;
+namespace Laradic\Idea\Metadata\Metas;
 
 interface CustomMetaInterface
 {

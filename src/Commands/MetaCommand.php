@@ -6,9 +6,10 @@
  */
 
 
-namespace Laradic\Phpstorm\Autocomplete\Commands;
+namespace Laradic\Idea\Metadata\Commands;
 
 use Illuminate\Console\Command;
+use Laradic\Idea\Metadata\Seeder;
 
 class MetaCommand extends Command
 {

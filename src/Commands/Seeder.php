@@ -6,7 +6,7 @@
  */
 
 
-namespace Laradic\Phpstorm\Autocomplete\Commands;
+namespace Laradic\Idea\Metadata\Commands;
 
 class Seeder extends \Illuminate\Database\Seeder
 {

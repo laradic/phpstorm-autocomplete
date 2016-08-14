@@ -1,6 +1,6 @@
 <?php
 
-namespace Laradic\Phpstorm\Autocomplete\Tests;
+namespace Laradic\Idea\Metadata\Tests;
 
 abstract class TestCase extends \Laradic\Testing\Laravel\AbstractTestCase
 {
@@ -9,7 +9,7 @@ abstract class TestCase extends \Laradic\Testing\Laravel\AbstractTestCase
      */
     protected function getServiceProviderClass()
     {
-        return \Laradic\Phpstorm\Autocomplete\AutocompleteServiceProvider::class;
+        return \Laradic\Idea\Metadata\MetadataServiceProvider::class;
     }
 
    /**

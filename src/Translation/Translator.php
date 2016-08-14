@@ -1,5 +1,5 @@
 <?php
-namespace Laradic\Phpstorm\Autocomplete\Translation;
+namespace Laradic\Idea\Metadata\Translation;
 
 use Illuminate\Filesystem\Filesystem;
 
@@ -14,7 +14,7 @@ class Translator extends \Illuminate\Translation\Translator
     }
 
     /**
-     * @return \Illuminate\Translation\LoaderInterface|\Laradic\Phpstorm\Autocomplete\Translation\FileLoader
+     * @return \Illuminate\Translation\LoaderInterface|\Laradic\Idea\Metadata\Translation\FileLoader
      */
     public function getLoader()
     {
